@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caligent | Next-Gen Digital Solutions</title>
+  <meta name="description"
+    content="Caligent — We don't just build software. We craft complex technological ecosystems into seamless, high-performance digital art for industry leaders." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- ── Navigation ───────────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">Caligent</a>
+    <ul class="nav__links">
+      <li><a href="web-app-dev.html">Web Dev</a></li>
+      <li><a href="web-app-dev.html">App Dev</a></li>
+      <li><a href="mvp-prototypes.html">MVP</a></li>
+      <li><a href="web-app-dev.html#process">Process</a></li>
+      <li><a href="#work">Work</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="#contact" class="btn-primary" id="nav-cta">Get Started</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Mobile menu">
+    <button class="nav__mobile-close" id="mobile-close" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <a href="web-app-dev.html">Web Dev</a>
+    <a href="web-app-dev.html">App Dev</a>
+    <a href="mvp-prototypes.html">MVP</a>
+    <a href="web-app-dev.html#process">Process</a>
+    <a href="#work">Work</a>
+    <a href="#contact" class="btn-primary" style="margin-top:1rem;">Get Started</a>
+  </div>
+
+  <!-- ── Hero ─────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="container">
+      <div class="hero__kicker fade-up">
+        <div class="section-accent"></div>
+        <span class="label-md">The Digital Vanguard</span>
+      </div>
+      <h1 class="display-lg hero__title fade-up stagger-1">
+        Next-Gen<br />
+        <span class="gradient-text" id="typed-headline">Digital Solutions</span>
+      </h1>
+      <p class="body-lg hero__body fade-up stagger-2">
+        We don't just build software. We craft complex technological ecosystems into seamless, high-performance digital
+        art for industry leaders.
+      </p>
+      <div class="hero__actions fade-up stagger-3">
+        <a href="#services" class="btn-primary" id="hero-cta-primary">Explore Services</a>
+        <a href="#why-us" class="btn-secondary" id="hero-cta-secondary">Our Philosophy
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 5v14M19 12l-7 7-7-7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="divider" style="margin-top: 5rem; margin-bottom: 2rem;"></div>
+      <div class="stats-row fade-up stagger-4">
+        <div class="stat">
+          <div class="stat__value">React</div>
+          <div class="stat__label">Frontend Stack</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">Flutter</div>
+          <div class="stat__label">Mobile Stack</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">Node.js</div>
+          <div class="stat__label">Backend Stack</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">AWS</div>
+          <div class="stat__label">Cloud Platform</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── Services ──────────────────────────────────────── -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-accent fade-up"></div>
+        <span class="label-md fade-up">Tailored Engineering Services</span>
+        <h2 class="headline-lg fade-up stagger-1" style="margin-top:0.75rem; max-width: 20ch;">
+          Precision-engineered solutions designed to scale.
+        </h2>
+        <p class="body-lg fade-up stagger-2" style="max-width: 55ch; margin-top: 0.75rem;">
+          From foundational web architecture to rapid MVP deployment.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Card 1 -->
+        <div class="card fade-up stagger-1" id="service-web">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+            </svg>
+          </div>
+          <div class="card__label"><span class="label-md">01</span></div>
+          <div class="card__title">Website Development</div>
+          <p class="card__body">High-performance, headless architectures built for speed, SEO, and cinematic user
+            experiences. We leverage the latest React and Next.js frameworks.</p>
+          <a href="web-app-dev.html" class="card__link">Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card fade-up stagger-2" id="service-app">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg>
+          </div>
+          <div class="card__label"><span class="label-md">02</span></div>
+          <div class="card__title">App Development</div>
+          <p class="card__body">Native-feel cross-platform mobile solutions that live in your pocket. Powered by Flutter
+            and React Native for seamless iOS &amp; Android experiences.</p>
+          <a href="web-app-dev.html" class="card__link">Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card fade-up stagger-3" id="service-mvp">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+          </div>
+          <div class="card__label"><span class="label-md">03</span></div>
+          <div class="card__title">MVP &amp; Prototypes</div>
+          <p class="card__body">Launch your idea in weeks, not months. Lean engineering for maximum impact. We validate
+            your vision and attract investors with precision-built prototypes.</p>
+          <a href="mvp-prototypes.html" class="card__link">Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+        <!-- Card 4 -->
+        <div class="card fade-up stagger-4" id="service-cloud">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+            </svg>
+          </div>
+          <div class="card__label"><span class="label-md">04</span></div>
+          <div class="card__title">Cloud Architecture</div>
+          <p class="card__body">Scalable AWS/Azure ecosystems designed for the future of enterprise data. We manage the
+            complexity, you manage the growth.</p>
+          <a href="web-app-dev.html" class="card__link">Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why Us ─────────────────────────────────────────── -->
+  <section class="section" id="why-us" style="background: var(--surface-low);">
+    <div class="container">
+      <div class="section-header--center fade-up">
+        <div class="section-accent" style="margin-inline: auto;"></div>
+        <span class="label-md">Why Choose Caligent?</span>
+        <h2 class="headline-lg" style="margin-top: 0.75rem;">
+          We move away from utility-only aesthetics to high-end editorial experiences.
+        </h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-block fade-up stagger-1" id="why-asymmetry">
+          <div class="icon-wrap icon-wrap--cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M12 22V12m0 0L2 7m10 5l10-5M2 17l10 5 10-5M2 7l10 5 10-5" />
+            </svg>
+          </div>
+          <div class="feature-block__title">Intentional Asymmetry</div>
+          <p class="feature-block__body">We break the grid to create movement and hierarchy, ensuring your brand stands
+            out in a sea of templates.</p>
+        </div>
+        <div class="feature-block fade-up stagger-2" id="why-precision">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="3" />
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="2" x2="12" y2="5" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="5" y2="12" />
+              <line x1="19" y1="12" x2="22" y2="12" />
+            </svg>
+          </div>
+          <div class="feature-block__title">Electric Precision</div>
+          <p class="feature-block__body">Using our signature "Electric Pulse" palette, we draw focus to what matters
+            most: your conversions.</p>
+        </div>
+        <div class="feature-block fade-up stagger-3" id="why-depth">
+          <div class="icon-wrap icon-wrap--cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <rect x="7" y="7" width="10" height="10" rx="1" />
+            </svg>
+          </div>
+          <div class="feature-block__title">Authoritative Depth</div>
+          <p class="feature-block__body">Tonal layering creates a sense of luxury and trust, signaling that your
+            technology is built on solid foundations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How We Work ──────────────────────────────────────── -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header--center fade-up">
+        <div class="section-accent" style="margin-inline: auto;"></div>
+        <span class="label-md">How We Work</span>
+        <h2 class="headline-lg" style="margin-top: 0.75rem;">We treat every project like<br /><span
+            class="gradient-text">it defines us.</span></h2>
+        <p class="body-lg" style="margin-top: 0.75rem; max-width: 54ch;">
+          We're selective about the projects we take on. When we commit, you get our full attention — not a fraction of
+          it.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-block fade-up stagger-1" id="how-direct">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <div class="feature-block__title">Direct Access</div>
+          <p class="feature-block__body">You work with the engineers directly. No account managers, no handoffs. The
+            people you brief are the people who build.</p>
+        </div>
+        <div class="feature-block fade-up stagger-2" id="how-quality">
+          <div class="icon-wrap icon-wrap--cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="9 11 12 14 22 4" />
+              <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+            </svg>
+          </div>
+          <div class="feature-block__title">Quality Over Volume</div>
+          <p class="feature-block__body">We don't stack projects. Every engagement gets our best thinking — from
+            architecture to the final pixel.</p>
+        </div>
+        <div class="feature-block fade-up stagger-3" id="how-speed">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+          </div>
+          <div class="feature-block__title">Startup Velocity</div>
+          <p class="feature-block__body">Fast decisions, lean sprints, no bureaucracy. We move with the urgency your
+            product deserves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────── -->
+  <section class="section-sm" id="contact">
+    <div class="container">
+      <div class="cta-section fade-up">
+        <div class="section-accent" style="margin-inline: auto;"></div>
+        <span class="label-md">Ready to Begin?</span>
+        <h2 class="headline-lg cta-section__title" style="margin-top: 0.75rem;">
+          Ready to Build Your<br /><span class="gradient-text">Digital Future?</span>
+        </h2>
+        <p class="body-lg cta-section__body">
+          Talk to the engineers directly. No fluff, no sales calls — just a straight conversation about what you're
+          building.
+        </p>
+        <div class="cta-section__actions">
+          <a href="mailto:hello@caligent.com" class="btn-primary" id="cta-email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Start a Project
+          </a>
+          <a href="mvp-prototypes.html" class="btn-secondary" id="cta-mvp">Launch Your MVP
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">Caligent</div>
+          <p class="footer__brand-desc">Elevating IT services through intentional design and precision engineering.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Platform</div>
+          <ul class="footer__links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">How We Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="web-app-dev.html">Web &amp; App Dev</a></li>
+            <li><a href="mvp-prototypes.html">MVP &amp; Prototypes</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Legal</div>
+          <ul class="footer__links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Connect</div>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@caligent.com">hello@caligent.com</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter/X</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="glow-line" style="margin-top: var(--space-xl);" />
+      <div class="footer__bottom">
+        <div class="footer__copy">© 2026 Caligent. All rights reserved.</div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-icon" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="Twitter">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

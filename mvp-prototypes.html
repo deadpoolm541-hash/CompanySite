@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MVP &amp; Prototypes | Caligent</title>
+  <meta name="description" content="Caligent — From Idea to Prototype in Weeks. We craft essential features to build robust MVPs that validate your vision, attract investors, and scale with your growth." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- ── Navigation ───────────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">Caligent</a>
+    <ul class="nav__links">
+      <li><a href="web-app-dev.html">Web Dev</a></li>
+      <li><a href="web-app-dev.html">App Dev</a></li>
+      <li><a href="mvp-prototypes.html">MVP</a></li>
+      <li><a href="web-app-dev.html#process">Process</a></li>
+      <li><a href="index.html#work">Work</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="index.html#contact" class="btn-primary" id="nav-cta">Get Started</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Mobile menu">
+    <button class="nav__mobile-close" id="mobile-close" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="web-app-dev.html">Web &amp; App Dev</a>
+    <a href="mvp-prototypes.html">MVP &amp; Prototypes</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#contact" class="btn-primary" style="margin-top:1rem;">Get Started</a>
+  </div>
+
+  <!-- ── Page Hero ─────────────────────────────────────── -->
+  <section class="page-hero" id="top" style="position:relative; overflow:hidden;">
+    <div class="orb orb-1" style="width:400px;height:400px;top:-20%;right:-5%;"></div>
+    <div class="orb orb-2" style="width:240px;height:240px;bottom:0;left:5%;animation-delay:-5s;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-accent fade-up"></div>
+      <span class="label-md fade-up">MVP &amp; Prototypes</span>
+      <h1 class="display-lg fade-up stagger-1" style="margin-top: 1rem; max-width: 18ch;">
+        From Idea to Prototype<br />
+        <span class="gradient-text">in Weeks.</span>
+      </h1>
+      <p class="body-lg fade-up stagger-2" style="max-width: 60ch; margin-top: 1.5rem;">
+        We craft essential features to build robust MVPs that validate your vision, attract investors, and scale with your growth. Precision engineering for the next generation of founders.
+      </p>
+      <div class="hero__actions fade-up stagger-3" style="margin-top: 2.5rem;">
+        <a href="#engine" class="btn-primary" id="hero-engine-cta">See Our Process</a>
+        <a href="index.html#contact" class="btn-secondary" id="hero-consult-cta">Free Consultation
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <!-- Quick proof -->
+      <div class="fade-up stagger-4" style="margin-top: 3.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <span class="tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          12-Week Launch
+        </span>
+        <span class="tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Enterprise Security
+        </span>
+        <span class="tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+          Cloud-Native
+        </span>
+        <span class="tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Investor-Ready
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── The Curation Engine ────────────────────────────── -->
+  <section class="section" id="engine" style="background: var(--surface-low);">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="label-md">The Caligent Engine</span>
+        <h2 class="headline-lg" style="margin-top: 0.75rem; max-width: 26ch;">
+          We don't just build apps; we architect success.
+        </h2>
+        <p class="body-lg" style="max-width: 60ch; margin-top: 0.75rem;">
+          Our process focuses on identifying the "Critical Core" to ensure maximum impact with minimum waste.
+        </p>
+      </div>
+
+      <!-- First 4 (process) -->
+      <div class="grid-4" style="margin-bottom: 1.5rem;">
+        <div class="card fade-up stagger-1" id="engine-discovery">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="card__title">Discovery</div>
+          <p class="card__body">Deep dive into user pain points and market gaps to define your unique value proposition.</p>
+        </div>
+        <div class="card fade-up stagger-2" id="engine-architecture">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div class="card__title">Architecture</div>
+          <p class="card__body">Mapping out user journeys and technical infrastructure built for future scalability.</p>
+        </div>
+        <div class="card fade-up stagger-3" id="engine-build">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="card__title">Rapid Build</div>
+          <p class="card__body">Lean, agile development cycles focusing on the "Must-Have" feature set for launch.</p>
+        </div>
+        <div class="card fade-up stagger-4" id="engine-deployment">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.64a16 16 0 006.29 6.29l1.32-1.32a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="card__title">Deployment</div>
+          <p class="card__body">Global rollout with integrated analytics to gather immediate user feedback.</p>
+        </div>
+      </div>
+
+      <!-- Next 3 (capabilities) -->
+      <div class="grid-3">
+        <div class="card fade-up stagger-1" id="engine-investor" style="background: var(--surface-container);">
+          <div class="card__icon" style="background: rgba(0, 82, 255, 0.12); color: var(--primary);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="card__title">Investor-Ready Prototypes</div>
+          <p class="card__body">We deliver more than code. We provide a vision that stakeholders can touch, feel, and believe in. From high-fidelity Figma files to functional beta releases.</p>
+        </div>
+        <div class="card fade-up stagger-2" id="engine-security" style="background: var(--surface-container);">
+          <div class="card__icon" style="background: rgba(0, 82, 255, 0.12); color: var(--primary);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="card__title">Enterprise Security</div>
+          <p class="card__body">Every prototype is built with production-grade security from day one. No compromises on data integrity. SOC 2 compliant architecture baked in from the start.</p>
+        </div>
+        <div class="card fade-up stagger-3" id="engine-cloud" style="background: var(--surface-container);">
+          <div class="card__icon" style="background: rgba(0, 82, 255, 0.12); color: var(--primary);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+          </div>
+          <div class="card__title">Cloud-Native Backbone</div>
+          <p class="card__body">Scalable AWS/Azure infrastructures that grow with your user base without expensive refactoring. Auto-scaling from 1 to 1M users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Our Principles ───────────────────────────────────── -->
+  <section class="section" id="principles">
+    <div class="container">
+      <div class="section-header--center fade-up">
+        <span class="label-md">How We Work</span>
+        <h2 class="headline-lg" style="margin-top: 0.75rem;">Built for founders who<br /><span class="gradient-text">can't afford to get it wrong.</span></h2>
+        <p class="body-lg" style="margin-top: 0.75rem; max-width: 54ch;">
+          MVPs live or die on execution. We apply the same rigour to a first product as we would to a Series B platform.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-block fade-up stagger-1" id="principle-focus">
+          <div class="icon-wrap" style="margin-bottom:0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <div class="feature-block__title">Focused engagement</div>
+          <p class="feature-block__body">We limit the projects we take on so every client gets our complete attention. You're never sharing bandwidth with 10 other deadlines.</p>
+        </div>
+        <div class="feature-block fade-up stagger-2" id="principle-transparency">
+          <div class="icon-wrap icon-wrap--cyan" style="margin-bottom:0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="feature-block__title">Full transparency</div>
+          <p class="feature-block__body">Every commit, every tradeoff, every decision — visible to you. We build in the open so there are no surprises on demo day.</p>
+        </div>
+        <div class="feature-block fade-up stagger-3" id="principle-quality">
+          <div class="icon-wrap" style="margin-bottom:0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <div class="feature-block__title">Production quality, always</div>
+          <p class="feature-block__body">We don't build throwaway prototypes. Every MVP we ship is clean, secure, and architected to grow — so you never have to rewrite from scratch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing Tiers (added value) ───────────────────── -->
+  <section class="section" id="packages" style="background: var(--surface-low);">
+    <div class="container">
+      <div class="section-header--center fade-up">
+        <span class="label-md">MVP Packages</span>
+        <h2 class="headline-lg" style="margin-top: 0.75rem;">Choose Your Launch Trajectory</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card fade-up stagger-1" id="package-seed" style="padding: 2.5rem;">
+          <div class="card__label"><span class="label-md">Seed</span></div>
+          <div class="card__title" style="font-size: 1.5rem; margin-top: 0.5rem;">Idea Validation</div>
+          <p class="card__body" style="margin-top: 0.75rem;">Perfect for validating your concept with early users and gathering initial feedback.</p>
+          <ul style="margin-top: 1.5rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Core feature set (5–8 screens)</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;4–6 week delivery</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Web or Mobile (single platform)</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Analytics integration</li>
+          </ul>
+          <a href="index.html#contact" class="btn-secondary" style="margin-top: 2rem; display: inline-flex;" id="pkg-seed-cta">Get a Quote →</a>
+        </div>
+
+        <div class="card fade-up stagger-2" id="package-launch" style="padding: 2.5rem; border-color: rgba(0, 82, 255, 0.35); background: rgba(0, 82, 255, 0.04); position: relative;">
+          <div style="position: absolute; top: 1.25rem; right: 1.25rem;"><span class="tag" style="font-size: 0.7rem;">Most Popular</span></div>
+          <div class="card__label"><span class="label-md">Launch</span></div>
+          <div class="card__title" style="font-size: 1.5rem; margin-top: 0.5rem;">Investor-Ready MVP</div>
+          <p class="card__body" style="margin-top: 0.75rem;">Complete MVP ready to pitch investors and onboard your first paying customers.</p>
+          <ul style="margin-top: 1.5rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Full feature set (10–15 screens)</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;8–12 week delivery</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Web + Mobile</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Enterprise security</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Cloud-native infra</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary" style="margin-top: 2rem; display: inline-flex;" id="pkg-launch-cta">Start Your MVP</a>
+        </div>
+
+        <div class="card fade-up stagger-3" id="package-scale" style="padding: 2.5rem;">
+          <div class="card__label"><span class="label-md">Scale</span></div>
+          <div class="card__title" style="font-size: 1.5rem; margin-top: 0.5rem;">Series A Ready</div>
+          <p class="card__body" style="margin-top: 0.75rem;">Enterprise-grade product with full analytics, A/B testing, and a scalable architecture for rapid growth.</p>
+          <ul style="margin-top: 1.5rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Complete product suite</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;12–16 week delivery</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;All platforms</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Dedicated team (6 engineers)</li>
+            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Post-launch support</li>
+          </ul>
+          <a href="index.html#contact" class="btn-secondary" style="margin-top: 2rem; display: inline-flex;" id="pkg-scale-cta">Get a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────── -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-section fade-up">
+        <span class="label-md">Stop Dreaming, Start Deploying</span>
+        <h2 class="headline-lg cta-section__title" style="margin-top: 0.75rem;">
+          Ready to Build the<br /><span class="gradient-text">Next Big Thing?</span>
+        </h2>
+        <p class="body-lg cta-section__body">
+          Let's build your vision and launch your MVP in record time. High-end engineering for modern startups.
+        </p>
+        <div class="cta-section__actions">
+          <a href="mailto:hello@caligent.com" class="btn-primary" id="cta-book">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Book a Free Call
+          </a>
+          <a href="web-app-dev.html" class="btn-secondary" id="cta-explore-services">Explore Dev Services →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">Caligent</div>
+          <p class="footer__brand-desc">High-end digital curation for modern startups. We transform complex problems into elegant, scalable software solutions.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Explore</div>
+          <ul class="footer__links">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#work">Case Studies</a></li>
+            <li><a href="web-app-dev.html#process">Process</a></li>
+            <li><a href="#packages">MVP Packages</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Connect</div>
+          <ul class="footer__links">
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Consultation</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Social</div>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@caligent.com">hello@caligent.com</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter/X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copy">© 2026 Caligent. All rights reserved.</div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-icon" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="Twitter">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
