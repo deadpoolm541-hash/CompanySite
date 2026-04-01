@@ -170,3 +170,99 @@ document.querySelectorAll('.card').forEach(card => {
     card.style.transition = 'transform 0.4s ease, border-color 0.3s, box-shadow 0.3s';
   });
 });
+
+/* ── Scroll Progress Bar ─────────────────────────────────────── */
+const progressBar = document.getElementById('scroll-progress');
+if (progressBar) {
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  }, { passive: true });
+}
+
+/* ── Stack Explode (scroll-driven) ───────────────────────────── */
+(function () {
+  const section = document.getElementById('stack');
+  if (!section) return;
+
+  const layers = [
+    document.getElementById('layer-1'),
+    document.getElementById('layer-2'),
+    document.getElementById('layer-3'),
+    document.getElementById('layer-4'),
+  ].filter(Boolean);
+
+  const dots = [0, 1, 2, 3].map(i => document.getElementById('dot-' + i)).filter(Boolean);
+  const hint = document.getElementById('explode-hint');
+  const conns = [
+    document.getElementById('conn-1'),
+    document.getElementById('conn-2'),
+    document.getElementById('conn-3'),
+  ].filter(Boolean);
+
+  // Vertical gap between layers when fully exploded (px)
+  const GAP = 96;
+  const N = layers.length;
+
+  function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+  function lerp(a, b, t) { return a + (b - a) * clamp(t, 0, 1); }
+
+  function onScroll() {
+    const rect = section.getBoundingClientRect();
+    // scrollable height inside the sticky section
+    const scrollable = section.offsetHeight - window.innerHeight;
+    // how far we've scrolled into this section (0 → scrollable)
+    const scrolled = clamp(-rect.top, 0, scrollable);
+    const progress = scrollable > 0 ? scrolled / scrollable : 0;
+
+    // hide hint as soon as animation starts
+    if (hint) hint.style.opacity = progress > 0.04 ? '0' : '0.4';
+
+    // Spread layers symmetrically: centre = 0, others fan out
+    const half = (N - 1) / 2;
+    layers.forEach((layer, i) => {
+      const targetY = (i - half) * GAP;
+      const y = lerp(0, targetY, progress);
+
+      layer.style.transform = `translateY(${y}px)`;
+      layer.style.transition = 'none';
+
+      // Fade non-active layers slightly when partially exploded
+      const activeIdx = Math.round(progress * (N - 1));
+      const isActive = i === activeIdx || progress < 0.08 || progress > 0.92;
+      layer.style.opacity = isActive ? '1' : String(lerp(1, 0.5, progress));
+
+      layer.classList.toggle('is-exploded', progress > 0.5);
+    });
+
+    // Connector lines between adjacent layers
+    conns.forEach((conn, ci) => {
+      if (!layers[ci] || !layers[ci + 1]) return;
+      const matchA = layers[ci].style.transform.match(/translateY\(([^p]+)px\)/);
+      const matchB = layers[ci + 1].style.transform.match(/translateY\(([^p]+)px\)/);
+      const yA = matchA ? parseFloat(matchA[1]) : 0;
+      const yB = matchB ? parseFloat(matchB[1]) : 0;
+      const layerH = 68;
+      const gap = yB - yA - layerH;
+      if (gap > 4) {
+        conn.style.opacity = String(clamp(progress * 3, 0, 1));
+        conn.style.top = (yA + layerH) + 'px';
+        conn.style.height = gap + 'px';
+      } else {
+        conn.style.opacity = '0';
+        conn.style.height = '0';
+      }
+    });
+
+    // Side progress dots
+    const activeIdx = Math.min(N - 1, Math.round(progress * (N - 1)));
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === activeIdx));
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  // Recalculate on resize
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
+})();

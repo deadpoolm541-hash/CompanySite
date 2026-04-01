@@ -133,12 +133,12 @@ img {
 
 /* ── Navigation ───────────────────────────────────────────── */
 .nav {
-  position: fixed;
+  position: absolute;
   top: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 19rem;
+  right: 3rem;
   z-index: 1000;
-  width: min(calc(100% - 2rem), 1100px);
+  width: auto;
   background: rgba(18, 20, 22, 0.72);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -156,17 +156,21 @@ img {
   top: 0.75rem;
 }
 
-.nav__logo {
+.header__logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 3rem;
+  z-index: 1001;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: -0.01em;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
   background: linear-gradient(135deg, var(--primary-container), var(--primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   white-space: nowrap;
-  flex-shrink: 0;
+  transition: opacity 0.3s ease, top 0.3s ease;
 }
 
 .nav__links {
@@ -175,6 +179,7 @@ img {
   gap: 0.25rem;
   list-style: none;
   flex: 1;
+  justify-content: space-evenly;
 }
 
 .nav__links a {
@@ -714,7 +719,8 @@ img {
 .footer__brand-logo {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
   background: linear-gradient(135deg, var(--primary-container), var(--primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -819,13 +825,17 @@ img {
 /* ── Scroll Animations ────────────────────────────────────── */
 .fade-up {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  transform: translateY(32px);
+  clip-path: inset(0 0 10% 0);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              clip-path 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
+  clip-path: inset(0 0 0% 0);
 }
 
 .stagger-1 {
@@ -894,6 +904,20 @@ img {
   .hero__actions {
     flex-direction: column;
   }
+}
+
+/* ── Scroll Progress Bar ─────────────────────────────────── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--primary-container), var(--tertiary));
+  z-index: 9998;
+  transition: width 0.06s linear;
+  box-shadow: 0 0 10px rgba(76, 214, 255, 0.55), 0 0 4px rgba(0, 82, 255, 0.5);
+  pointer-events: none;
 }
 
 /* ── Misc ─────────────────────────────────────────────────── */

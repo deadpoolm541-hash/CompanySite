@@ -12,17 +12,20 @@
 
 <body>
 
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
   <!-- Cursor Glow -->
   <div class="cursor-glow" id="cursor-glow"></div>
 
   <!-- ── Navigation ───────────────────────────────────── -->
+  <a href="index.html" class="header__logo">Caligent</a>
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="nav__logo">Caligent</a>
     <ul class="nav__links">
-      <li><a href="web-app-dev.html">Web Dev</a></li>
-      <li><a href="web-app-dev.html">App Dev</a></li>
+      <li><a href="web-dev.html">Web Dev</a></li>
+      <li><a href="app-dev.html">App Dev</a></li>
       <li><a href="mvp-prototypes.html">MVP</a></li>
-      <li><a href="web-app-dev.html#process">Process</a></li>
+      <li><a href="web-dev.html#process">Process</a></li>
       <li><a href="#work">Work</a></li>
     </ul>
     <div class="nav__cta">
@@ -41,10 +44,10 @@
         <line x1="6" y1="6" x2="18" y2="18" />
       </svg>
     </button>
-    <a href="web-app-dev.html">Web Dev</a>
-    <a href="web-app-dev.html">App Dev</a>
+    <a href="web-dev.html">Web Dev</a>
+    <a href="app-dev.html">App Dev</a>
     <a href="mvp-prototypes.html">MVP</a>
-    <a href="web-app-dev.html#process">Process</a>
+    <a href="web-dev.html#process">Process</a>
     <a href="#work">Work</a>
     <a href="#contact" class="btn-primary" style="margin-top:1rem;">Get Started</a>
   </div>
@@ -132,7 +135,7 @@
           <div class="card__title">Website Development</div>
           <p class="card__body">High-performance, headless architectures built for speed, SEO, and cinematic user
             experiences. We leverage the latest React and Next.js frameworks.</p>
-          <a href="web-app-dev.html" class="card__link">Explore
+          <a href="web-dev.html" class="card__link">Explore
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <line x1="5" y1="12" x2="19" y2="12" />
               <polyline points="12 5 19 12 12 19" />
@@ -151,7 +154,7 @@
           <div class="card__title">App Development</div>
           <p class="card__body">Native-feel cross-platform mobile solutions that live in your pocket. Powered by Flutter
             and React Native for seamless iOS &amp; Android experiences.</p>
-          <a href="web-app-dev.html" class="card__link">Explore
+          <a href="app-dev.html" class="card__link">Explore
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <line x1="5" y1="12" x2="19" y2="12" />
               <polyline points="12 5 19 12 12 19" />
@@ -176,26 +179,111 @@
             </svg>
           </a>
         </div>
-        <!-- Card 4 -->
-        <div class="card fade-up stagger-4" id="service-cloud">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
-            </svg>
-          </div>
-          <div class="card__label"><span class="label-md">04</span></div>
-          <div class="card__title">Cloud Architecture</div>
-          <p class="card__body">Scalable AWS/Azure ecosystems designed for the future of enterprise data. We manage the
-            complexity, you manage the growth.</p>
-          <a href="web-app-dev.html" class="card__link">Explore
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-        </div>
+
       </div>
     </div>
+  </section>
+
+  <!-- ── Stack Explode ────────────────────────────────── -->
+  <section class="explode-section" id="stack" aria-label="Tech stack layers">
+    <div class="explode-sticky">
+
+      <div class="explode-title fade-up">
+        <span class="label-md">Our Architecture</span>
+        <h2 class="headline-lg" style="margin-top:0.5rem;">Every layer, <span class="gradient-text">purpose-built.</span></h2>
+      </div>
+
+      <div class="explode-stack" id="explode-stack">
+
+        <!-- Connector lines -->
+        <div class="explode-connector" id="conn-1" style="top:0; height:0;"></div>
+        <div class="explode-connector" id="conn-2" style="top:0; height:0;"></div>
+        <div class="explode-connector" id="conn-3" style="top:0; height:0;"></div>
+
+        <!-- Layer 1 — UI -->
+        <div class="explode-layer explode-layer--1" id="layer-1" data-index="0">
+          <div class="explode-label">01 — CLIENT</div>
+          <div class="explode-layer__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="explode-layer__info">
+            <div class="explode-layer__name">UI / Frontend</div>
+            <div class="explode-layer__stack">React · Next.js · Flutter Web · Framer Motion</div>
+          </div>
+          <div class="explode-layer__tag">Client</div>
+        </div>
+
+        <!-- Layer 2 — API -->
+        <div class="explode-layer explode-layer--2" id="layer-2" data-index="1">
+          <div class="explode-label">02 — API</div>
+          <div class="explode-layer__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <div class="explode-layer__info">
+            <div class="explode-layer__name">API / Backend</div>
+            <div class="explode-layer__stack">Node.js · FastAPI · GraphQL · REST</div>
+          </div>
+          <div class="explode-layer__tag">Server</div>
+        </div>
+
+        <!-- Layer 3 — Cloud -->
+        <div class="explode-layer explode-layer--3" id="layer-3" data-index="2">
+          <div class="explode-label">03 — CLOUD</div>
+          <div class="explode-layer__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+            </svg>
+          </div>
+          <div class="explode-layer__info">
+            <div class="explode-layer__name">Cloud Infrastructure</div>
+            <div class="explode-layer__stack">AWS · GCP · Docker · Kubernetes</div>
+          </div>
+          <div class="explode-layer__tag">Infra</div>
+        </div>
+
+        <!-- Layer 4 — Data -->
+        <div class="explode-layer explode-layer--4" id="layer-4" data-index="3">
+          <div class="explode-label">04 — DATA</div>
+          <div class="explode-layer__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <ellipse cx="12" cy="5" rx="9" ry="3"/>
+              <path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/>
+              <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+            </svg>
+          </div>
+          <div class="explode-layer__info">
+            <div class="explode-layer__name">Data / Storage</div>
+            <div class="explode-layer__stack">PostgreSQL · Redis · Firestore · S3</div>
+          </div>
+          <div class="explode-layer__tag">Data</div>
+        </div>
+
+      </div><!-- /.explode-stack -->
+
+      <!-- Side progress dots -->
+      <div class="explode-progress" aria-hidden="true">
+        <div class="explode-dot active" id="dot-0"></div>
+        <div class="explode-dot" id="dot-1"></div>
+        <div class="explode-dot" id="dot-2"></div>
+        <div class="explode-dot" id="dot-3"></div>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="explode-hint" id="explode-hint">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+        scroll
+      </div>
+
+    </div><!-- /.explode-sticky -->
   </section>
 
   <!-- ── Why Us ─────────────────────────────────────────── -->
@@ -302,6 +390,7 @@
     </div>
   </section>
 
+
   <!-- ── CTA ───────────────────────────────────────────── -->
   <section class="section-sm" id="contact">
     <div class="container">
@@ -348,7 +437,8 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#work">How We Work</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="web-app-dev.html">Web &amp; App Dev</a></li>
+            <li><a href="web-dev.html">Web Dev</a></li>
+            <li><a href="app-dev.html">App Dev</a></li>
             <li><a href="mvp-prototypes.html">MVP &amp; Prototypes</a></li>
           </ul>
         </div>

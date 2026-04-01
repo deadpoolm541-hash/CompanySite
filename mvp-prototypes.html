@@ -13,13 +13,13 @@
   <div class="cursor-glow" id="cursor-glow"></div>
 
   <!-- ── Navigation ───────────────────────────────────── -->
+  <a href="index.html" class="header__logo">Caligent</a>
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="nav__logo">Caligent</a>
     <ul class="nav__links">
-      <li><a href="web-app-dev.html">Web Dev</a></li>
-      <li><a href="web-app-dev.html">App Dev</a></li>
+      <li><a href="web-dev.html">Web Dev</a></li>
+      <li><a href="app-dev.html">App Dev</a></li>
       <li><a href="mvp-prototypes.html">MVP</a></li>
-      <li><a href="web-app-dev.html#process">Process</a></li>
+      <li><a href="web-dev.html#process">Process</a></li>
       <li><a href="index.html#work">Work</a></li>
     </ul>
     <div class="nav__cta">
@@ -36,7 +36,8 @@
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
     <a href="index.html">Home</a>
-    <a href="web-app-dev.html">Web &amp; App Dev</a>
+    <a href="web-dev.html">Web Dev</a>
+    <a href="app-dev.html">App Dev</a>
     <a href="mvp-prototypes.html">MVP &amp; Prototypes</a>
     <a href="index.html#contact">Contact</a>
     <a href="index.html#contact" class="btn-primary" style="margin-top:1rem;">Get Started</a>
@@ -68,14 +69,7 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           12-Week Launch
         </span>
-        <span class="tag">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Enterprise Security
-        </span>
-        <span class="tag">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
-          Cloud-Native
-        </span>
+
         <span class="tag">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
           Investor-Ready
@@ -138,20 +132,7 @@
           <div class="card__title">Investor-Ready Prototypes</div>
           <p class="card__body">We deliver more than code. We provide a vision that stakeholders can touch, feel, and believe in. From high-fidelity Figma files to functional beta releases.</p>
         </div>
-        <div class="card fade-up stagger-2" id="engine-security" style="background: var(--surface-container);">
-          <div class="card__icon" style="background: rgba(0, 82, 255, 0.12); color: var(--primary);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div class="card__title">Enterprise Security</div>
-          <p class="card__body">Every prototype is built with production-grade security from day one. No compromises on data integrity. SOC 2 compliant architecture baked in from the start.</p>
-        </div>
-        <div class="card fade-up stagger-3" id="engine-cloud" style="background: var(--surface-container);">
-          <div class="card__icon" style="background: rgba(0, 82, 255, 0.12); color: var(--primary);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
-          </div>
-          <div class="card__title">Cloud-Native Backbone</div>
-          <p class="card__body">Scalable AWS/Azure infrastructures that grow with your user base without expensive refactoring. Auto-scaling from 1 to 1M users.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -193,59 +174,7 @@
     </div>
   </section>
 
-  <!-- ── Pricing Tiers (added value) ───────────────────── -->
-  <section class="section" id="packages" style="background: var(--surface-low);">
-    <div class="container">
-      <div class="section-header--center fade-up">
-        <span class="label-md">MVP Packages</span>
-        <h2 class="headline-lg" style="margin-top: 0.75rem;">Choose Your Launch Trajectory</h2>
-      </div>
 
-      <div class="grid-3">
-        <div class="card fade-up stagger-1" id="package-seed" style="padding: 2.5rem;">
-          <div class="card__label"><span class="label-md">Seed</span></div>
-          <div class="card__title" style="font-size: 1.5rem; margin-top: 0.5rem;">Idea Validation</div>
-          <p class="card__body" style="margin-top: 0.75rem;">Perfect for validating your concept with early users and gathering initial feedback.</p>
-          <ul style="margin-top: 1.5rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Core feature set (5–8 screens)</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;4–6 week delivery</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Web or Mobile (single platform)</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Analytics integration</li>
-          </ul>
-          <a href="index.html#contact" class="btn-secondary" style="margin-top: 2rem; display: inline-flex;" id="pkg-seed-cta">Get a Quote →</a>
-        </div>
-
-        <div class="card fade-up stagger-2" id="package-launch" style="padding: 2.5rem; border-color: rgba(0, 82, 255, 0.35); background: rgba(0, 82, 255, 0.04); position: relative;">
-          <div style="position: absolute; top: 1.25rem; right: 1.25rem;"><span class="tag" style="font-size: 0.7rem;">Most Popular</span></div>
-          <div class="card__label"><span class="label-md">Launch</span></div>
-          <div class="card__title" style="font-size: 1.5rem; margin-top: 0.5rem;">Investor-Ready MVP</div>
-          <p class="card__body" style="margin-top: 0.75rem;">Complete MVP ready to pitch investors and onboard your first paying customers.</p>
-          <ul style="margin-top: 1.5rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Full feature set (10–15 screens)</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;8–12 week delivery</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Web + Mobile</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Enterprise security</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Cloud-native infra</li>
-          </ul>
-          <a href="index.html#contact" class="btn-primary" style="margin-top: 2rem; display: inline-flex;" id="pkg-launch-cta">Start Your MVP</a>
-        </div>
-
-        <div class="card fade-up stagger-3" id="package-scale" style="padding: 2.5rem;">
-          <div class="card__label"><span class="label-md">Scale</span></div>
-          <div class="card__title" style="font-size: 1.5rem; margin-top: 0.5rem;">Series A Ready</div>
-          <p class="card__body" style="margin-top: 0.75rem;">Enterprise-grade product with full analytics, A/B testing, and a scalable architecture for rapid growth.</p>
-          <ul style="margin-top: 1.5rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Complete product suite</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;12–16 week delivery</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;All platforms</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Dedicated team (6 engineers)</li>
-            <li style="font-size: 0.9rem; color: var(--on-surface-variant);">✦ &nbsp;Post-launch support</li>
-          </ul>
-          <a href="index.html#contact" class="btn-secondary" style="margin-top: 2rem; display: inline-flex;" id="pkg-scale-cta">Get a Quote →</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ── CTA ───────────────────────────────────────────── -->
   <section class="section-sm">
@@ -263,7 +192,7 @@
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             Book a Free Call
           </a>
-          <a href="web-app-dev.html" class="btn-secondary" id="cta-explore-services">Explore Dev Services →</a>
+          <a href="web-dev.html" class="btn-secondary" id="cta-explore-services">Explore Dev Services →</a>
         </div>
       </div>
     </div>
@@ -282,8 +211,7 @@
           <ul class="footer__links">
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#work">Case Studies</a></li>
-            <li><a href="web-app-dev.html#process">Process</a></li>
-            <li><a href="#packages">MVP Packages</a></li>
+            <li><a href="web-dev.html#process">Process</a></li>
           </ul>
         </div>
         <div>
