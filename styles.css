@@ -1379,9 +1379,11 @@ img {
 /* ── Scroll-Driven Explode Section ───────────────────────── */
 .explode-section {
   position: relative;
-  height: 125vh;
+  height: 170vh;
+  /* More scroll room = Slower, more controlled animation */
   /* Tighter scroll window */
-  margin-bottom: -45vh;
+  margin-bottom: -40vh;
+  /* Larger pull-up to account for the extra height */
   /* Ultra-smooth, gap-free transition */
 }
 
