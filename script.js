@@ -124,18 +124,23 @@ const mobileClose = document.getElementById('mobile-close');
 if (hamburger && mobileMenu) {
   hamburger.addEventListener('click', () => {
     mobileMenu.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    hamburger.classList.add('active');
+    document.documentElement.style.overflow = 'hidden';
   });
 
   const closeMenu = () => {
     mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
+    hamburger.classList.remove('active');
+    document.documentElement.style.overflow = '';
   };
 
   if (mobileClose) mobileClose.addEventListener('click', closeMenu);
 
   mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeMenu);
+    link.addEventListener('click', (e) => {
+      closeMenu();
+      e.target.blur();
+    });
   });
 }
 
@@ -203,7 +208,7 @@ if (progressBar) {
   ].filter(Boolean);
 
   // Vertical gap between layers when fully exploded (px)
-  const GAP = 96;
+  const GAP = 80;
   const N = layers.length;
 
   function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }

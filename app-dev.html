@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>App Development & Mobile Architecture | Caligent</title>
-  <meta name="description" content="Caligent — Crafting digital masterpieces with technical rigor. Specialized in Flutter, React Native, and native integrations for brands that demand perfection." />
+  <meta name="description"
+    content="Caligent — Crafting digital masterpieces with technical rigor. Specialized in Flutter, React Native, and native integrations for brands that demand perfection." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- Cursor Glow -->
@@ -32,14 +35,18 @@
 
   <!-- Mobile Menu -->
   <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Mobile menu">
+    <a href="index.html" class="header__logo">Caligent</a>
     <button class="nav__mobile-close" id="mobile-close" aria-label="Close menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
     </button>
     <a href="index.html">Home</a>
     <a href="web-dev.html">Web Dev</a>
     <a href="app-dev.html">App Dev</a>
-    <a href="mvp-prototypes.html">MVP &amp; Prototypes</a>
-    <a href="#process">Process</a>
+    <a href="mvp-prototypes.html">MVP</a>
+    <a href="index.html#work">Work</a>
     <a href="index.html#contact" class="btn-primary" style="margin-top:1rem;">Get Started</a>
   </div>
 
@@ -55,12 +62,16 @@
         <span class="gradient-text">App Experiences.</span>
       </h1>
       <p class="body-lg fade-up stagger-2" style="max-width: 58ch; margin-top: 1.5rem;">
-        We build ultra-responsive, beautiful cross-platform applications that live in your pocket. Specialized in Flutter, React Native, and iOS/Android ecosystems.
+        We build ultra-responsive, beautiful cross-platform applications that live in your pocket. Specialized in
+        Flutter, React Native, and iOS/Android ecosystems.
       </p>
       <div class="hero__actions fade-up stagger-3" style="margin-top: 2.5rem;">
         <a href="#tech-stack" class="btn-primary" id="hero-tech-cta">Explore Our Stack</a>
         <a href="index.html#contact" class="btn-secondary" id="hero-contact-cta">Start a Project
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
         </a>
       </div>
     </div>
@@ -83,20 +94,30 @@
         <!-- Polyglot -->
         <div class="card fade-up stagger-1" id="tech-polyglot" style="border-color: rgba(76, 214, 255, 0.2);">
           <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8" stroke-width="2"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" stroke-width="2" />
+            </svg>
           </div>
           <div class="card__label"><span class="label-md">Integration</span></div>
           <div class="card__title">Tech-Agnostic Approach</div>
-          <p class="card__body" style="padding-bottom: 2rem;">Looking for something else? Our senior engineers are polyglots. We routinely orchestrate and integrate into existing legacy systems, whether it's Python, Go, Java, or native Swift/Kotlin. We choose the right tool for the architecture, not just the ones we like.</p>
+          <p class="card__body" style="padding-bottom: 2rem;">Looking for something else? Our senior engineers are
+            polyglots. We routinely orchestrate and integrate into existing legacy systems, whether it's Python, Go,
+            Java, or native Swift/Kotlin. We choose the right tool for the architecture, not just the ones we like.</p>
         </div>
         <!-- Mobile -->
         <div class="card fade-up stagger-2" id="tech-mobile">
           <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="5" y="2" width="14" height="20" rx="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg>
           </div>
           <div class="card__label"><span class="label-md">Mobile</span></div>
           <div class="card__title">Mobile Ecosystems</div>
-          <p class="card__body">Native-quality performance across iOS and Android via Flutter and React Native, utilizing shared business logic.</p>
+          <p class="card__body">Native-quality performance across iOS and Android via Flutter and React Native,
+            utilizing shared business logic.</p>
           <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
             <span class="tag">Flutter</span>
             <span class="tag">React Native</span>
@@ -106,11 +127,16 @@
         <!-- Backend -->
         <div class="card fade-up stagger-3" id="tech-backend">
           <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
           </div>
           <div class="card__label"><span class="label-md">Backend</span></div>
           <div class="card__title">Backend &amp; DevOps</div>
-          <p class="card__body">Distributed systems powered by Node.js and Rust, orchestrated via Kubernetes for infinite horizontal scaling.</p>
+          <p class="card__body">Distributed systems powered by Node.js and Rust, orchestrated via Kubernetes for
+            infinite horizontal scaling.</p>
           <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
             <span class="tag">Node.js</span>
             <span class="tag">Rust</span>
@@ -123,7 +149,7 @@
 
   <!-- ── Process ────────────────────────────────────────── -->
   <section class="section" id="process">
-    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+    <div class="container process-grid">
       <div>
         <div class="section-header fade-up">
           <span class="label-md">Precision Workflow</span>
@@ -137,72 +163,101 @@
             <div class="process-step__num">01</div>
             <div class="process-step__content">
               <div class="process-step__title">Discovery</div>
-              <p class="process-step__body">Uncovering technical requirements and business objectives through deep-dive sessions.</p>
+              <p class="process-step__body">Uncovering technical requirements and business objectives through deep-dive
+                sessions.</p>
             </div>
           </div>
           <div class="process-step" id="step-design">
             <div class="process-step__num">02</div>
             <div class="process-step__content">
               <div class="process-step__title">Design</div>
-              <p class="process-step__body">Translating strategy into high-fidelity architectural blueprints and user experiences.</p>
+              <p class="process-step__body">Translating strategy into high-fidelity architectural blueprints and user
+                experiences.</p>
             </div>
           </div>
           <div class="process-step" id="step-dev">
             <div class="process-step__num">03</div>
             <div class="process-step__content">
               <div class="process-step__title">Dev</div>
-              <p class="process-step__body">Agile engineering cycles with constant testing and continuous integration protocols.</p>
+              <p class="process-step__body">Agile engineering cycles with constant testing and continuous integration
+                protocols.</p>
             </div>
           </div>
           <div class="process-step" id="step-launch">
             <div class="process-step__num">04</div>
             <div class="process-step__content">
               <div class="process-step__title">Launch</div>
-              <p class="process-step__body">Seamless deployment and monitoring to ensure peak performance upon market entry.</p>
+              <p class="process-step__body">Seamless deployment and monitoring to ensure peak performance upon market
+                entry.</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Commitments -->
-      <div class="fade-up stagger-2" style="background: var(--surface-low); border-radius: 1rem; padding: 2.75rem; border: 1px solid rgba(76, 214, 255, 0.12);">
+      <div class="fade-up stagger-2 commitments-box">
         <span class="label-md">Our Commitments</span>
-        <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1.75rem;">
+        <div class="commitment-item">
           <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
-            <div class="icon-wrap" style="width:2rem;height:2rem;border-radius:0.5rem;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
+              <div class="icon-wrap" style="width:2rem;height:2rem;border-radius:0.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <div
+                style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">
+                Engineers, not middlemen</div>
             </div>
-            <div style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">Engineers, not middlemen</div>
-          </div>
-            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">You work directly with the people writing the code. What you brief is what gets built.</p>
-          </div>
-          <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
-            <div class="icon-wrap icon-wrap--cyan" style="width:2rem;height:2rem;border-radius:0.5rem;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <div style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">Lean and fast</div>
-          </div>
-            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">No corporate slowdowns. We run tight sprints, ship fast, and iterate in days — not quarters.</p>
+            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">You work directly with the
+              people writing the code. What you brief is what gets built.</p>
           </div>
           <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
-            <div class="icon-wrap" style="width:2rem;height:2rem;border-radius:0.5rem;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
+              <div class="icon-wrap icon-wrap--cyan" style="width:2rem;height:2rem;border-radius:0.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+              <div
+                style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">
+                Lean and fast</div>
             </div>
-            <div style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">Full transparency</div>
-          </div>
-            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">Honest timelines. Clear communication. You always know exactly where your product stands.</p>
+            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">No corporate slowdowns. We
+              run tight sprints, ship fast, and iterate in days — not quarters.</p>
           </div>
           <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
-            <div class="icon-wrap icon-wrap--cyan" style="width:2rem;height:2rem;border-radius:0.5rem;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
+              <div class="icon-wrap" style="width:2rem;height:2rem;border-radius:0.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </div>
+              <div
+                style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">
+                Full transparency</div>
             </div>
-            <div style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">Production-grade from day one</div>
+            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">Honest timelines. Clear
+              communication. You always know exactly where your product stands.</p>
           </div>
-            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">We don't build demos. Every line of code is written to scale, tested, and ready for real users.</p>
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.35rem;">
+              <div class="icon-wrap icon-wrap--cyan" style="width:2rem;height:2rem;border-radius:0.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:0.9rem;height:0.9rem;">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <div
+                style="font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--on-surface);">
+                Production-grade from day one</div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6;">We don't build demos.
+              Every line of code is written to scale, tested, and ready for real users.</p>
           </div>
         </div>
       </div>
@@ -214,30 +269,41 @@
     <div class="container">
       <div class="section-header--center fade-up">
         <span class="label-md">What You Can Expect</span>
-        <h2 class="headline-lg" style="margin-top: 0.75rem;">Built to the same standard<br /><span class="gradient-text">every time.</span></h2>
+        <h2 class="headline-lg" style="margin-top: 0.75rem;">Built to the same standard<br /><span
+            class="gradient-text">every time.</span></h2>
         <p class="body-lg" style="margin-top: 0.75rem; max-width: 52ch;">
           We're selective about the work we take on — so that when we do, we can give it everything we've got.
         </p>
       </div>
 
       <div class="grid-2" style="gap: 2rem;">
-        <div class="card fade-up stagger-1" style="background: var(--surface-container); padding: 2.5rem; border-color: rgba(0, 82, 255, 0.2);">
+        <div class="card fade-up stagger-1"
+          style="background: var(--surface-container); padding: 2.5rem; border-color: rgba(0, 82, 255, 0.2);">
           <div style="margin-bottom: 1rem;">
             <div class="icon-wrap" style="width:2.5rem;height:2.5rem;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
             </div>
           </div>
           <div class="card__title" style="font-size: 1.25rem;">Design-Driven Engineering</div>
-          <p class="card__body" style="margin-top: 0.75rem;">Every interface we build is both functional and beautiful. We hold the same standard for code quality as we do for visual design — no compromises.</p>
+          <p class="card__body" style="margin-top: 0.75rem;">Every interface we build is both functional and beautiful.
+            We hold the same standard for code quality as we do for visual design — no compromises.</p>
         </div>
-        <div class="card fade-up stagger-2" style="background: var(--surface-container); padding: 2.5rem; border-color: rgba(76, 214, 255, 0.15);">
+        <div class="card fade-up stagger-2"
+          style="background: var(--surface-container); padding: 2.5rem; border-color: rgba(76, 214, 255, 0.15);">
           <div style="margin-bottom: 1rem;">
             <div class="icon-wrap icon-wrap--cyan" style="width:2.5rem;height:2.5rem;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0110 0v4" />
+              </svg>
             </div>
           </div>
           <div class="card__title" style="font-size: 1.25rem;">Ready for Real Users</div>
-          <p class="card__body" style="margin-top: 0.75rem;">Secure, performant, and scalable from launch day. We write code that doesn't fall over when it matters most.</p>
+          <p class="card__body" style="margin-top: 0.75rem;">Secure, performant, and scalable from launch day. We write
+            code that doesn't fall over when it matters most.</p>
         </div>
       </div>
 
@@ -260,7 +326,10 @@
         </p>
         <div class="cta-section__actions">
           <a href="mailto:hello@caligent.com" class="btn-primary" id="cta-contact">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
             Start a Conversation
           </a>
           <a href="mvp-prototypes.html" class="btn-secondary" id="cta-mvp-nav">Explore MVP Services →</a>
@@ -275,7 +344,8 @@
       <div class="footer__inner">
         <div class="footer__brand">
           <div class="footer__brand-logo">Caligent</div>
-          <p class="footer__brand-desc">Elevating technical services through extreme intentionality and aesthetic rigor. We build the future of the digital landscape.</p>
+          <p class="footer__brand-desc">Elevating technical services through extreme intentionality and aesthetic rigor.
+            We build the future of the digital landscape.</p>
         </div>
         <div>
           <div class="footer__col-title">Architecture</div>
@@ -307,13 +377,22 @@
         <div class="footer__copy">© 2026 Caligent. All rights reserved.</div>
         <div class="footer__socials">
           <a href="#" class="footer__social-icon" aria-label="LinkedIn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
           </a>
           <a href="#" class="footer__social-icon" aria-label="Twitter">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
           </a>
           <a href="#" class="footer__social-icon" aria-label="GitHub">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
           </a>
         </div>
       </div>
@@ -322,4 +401,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
