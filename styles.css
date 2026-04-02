@@ -1379,9 +1379,9 @@ img {
 /* ── Scroll-Driven Explode Section ───────────────────────── */
 .explode-section {
   position: relative;
-  height: 115vh;
+  height: 125vh;
   /* Tighter scroll window */
-  margin-bottom: -40vh;
+  margin-bottom: -45vh;
   /* Ultra-smooth, gap-free transition */
 }
 
